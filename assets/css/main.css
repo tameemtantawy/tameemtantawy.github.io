@@ -2549,8 +2549,7 @@ input, select, textarea {
 	.image {
 		border-radius: 60px;
 		border: 0;
-		display: block; /* Changed to block to ensure it behaves like a block-level element */
-
+		display: block; /* Ensures it behaves like a block-level element */
 	}
 
 		.image img {
@@ -4363,3 +4362,9 @@ input, select, textarea {
 	}
 	
 	
+.major {
+	max-width: 1000px; /* Set your desired maximum width */
+	max-height: 90px;
+	margin: 0 auto; /* Center the section */
+	padding: 20px; /* Add padding as needed */
+}
