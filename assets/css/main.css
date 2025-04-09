@@ -4368,3 +4368,39 @@ input, select, textarea {
 	margin: 0 auto; /* Center the section */
 	padding: 20px; /* Add padding as needed */
 }
+
+
+
+
+/* Uniform logo styling for desktop and mobile */
+.logo-img {
+	width: 150px;        /* Set the desired fixed width */
+	height: 150px;       /* Set the desired fixed height */
+	object-fit: contain; /* Ensures the entire logo fits inside the box without distortion */
+	display: block;      /* Makes the image a block element for easier centering */
+	margin: 0 auto;      /* Centers the image within its container */
+  }
+  
+  /* Adjustments for mobile screens */
+  @media (max-width: 768px) {
+	.logo-img {
+	  width: 90px;       /* Adjust logo width for smaller screens */
+	  height: 90px;      /* Adjust logo height for smaller screens */
+	}
+  }
+  
+
+/* Base style (desktop/tablet and up) */
+.carousel-item h3.major {
+	font-size: 2rem;   /* or your preferred default size */
+	line-height: 1.2;  /* helps prevent text overlap */
+	margin: 1rem 0;
+  }
+  
+  /* Mobile style (below 768px) */
+  @media (max-width: 810px) {
+	.carousel-item h3.major {
+	  font-size: 0.9rem; /* reduce the size for phone screens */
+	}
+  }
+  
