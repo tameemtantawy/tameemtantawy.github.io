@@ -45,7 +45,3 @@ document.getElementById('About-button').addEventListener('click', () => {
 document.getElementById('Experience-button').addEventListener('click', () => {
     document.getElementById('Experience').scrollIntoView({ block: 'start', behavior: 'smooth' });
 });
-
-document.getElementById('Projects-button').addEventListener('click', () => {
-    document.getElementById('Projects').scrollIntoView({ block: 'start', behavior: 'smooth' });
-});

@@ -32,7 +32,7 @@
 						<h1 class="top"><a href="https://github.com/tameemtantawy" class="icon-button github1"><i class="fab fa-github"></i></a>
 							<a href="https://www.linkedin.com/in/tameemtantawy" class="icon-button linkedin1"><i class="fab fa-linkedin-in"></i></a>
 							<a href="https://www.instagram.com/tameem.tantawy/" class="icon-button instagram1"><i class="fab fa-instagram"></i></a>
-							<a href="images/Tameem Tantawy's Resume.pdf" class="icon-button resume1"><i class="fas fa-file-alt"></i></a>
+							<a href="images/Tameem_Tantawy_Resume.pdf" class="icon-button resume1"><i class="fas fa-file-alt"></i></a>
 						</h1>
 
 					</header>
@@ -68,7 +68,7 @@
 						<div class="button-container">
 							<button id="About-button">About</button>
 							<button id="Experience-button">Experience</button>
-							<button id="Projects-button">Projects</button>
+							<a href="projects.html" class="nav-button">Projects</a>
 						</div>
 						</div>
 						<br>
@@ -115,8 +115,10 @@
 									<a href="#" class="image"><img src="images/profile2.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">About Me</h2>
-										<p>Hello there! My name is Tameem and I love playing basketball. Other than that, I am a software engineer. I was born and raised in Egypt and moved to Florida to study Computer Science at the University of South Florida. I am interested in Full-Stack Development, Mobile Development, and Machine Learning. I love working with a team and solving problems collectively.</p>
-										<a href="images/Tameem Tantawy's Resume.pdf" class="special">Resume</a>
+									<p>Hey! I'm Tameem.</p>
+									<p>I'm a Computer Science student at the University of South Florida, graduating in May 2027. I enjoy building reliable software that operates at scale.</p>
+									<p>I'm especially interested in distributed systems, backend infrastructure, cloud computing, databases, and high-performance systems. <a href="https://www.linkedin.com/in/tameem-tantawy" target="_blank" rel="noopener noreferrer">Let's chat!</a></p>
+									<a href="images/Tameem_Tantawy_Resume.pdf" class="special">Resume</a>
 									</div>
 								</div>
 							</section>
@@ -125,130 +127,98 @@
 						<section class="wrapper alt style1">
 							<div class="inner">
 							  <h2 id="Experience" class="major">Experience</h2>
-							  <section class="features">
-								<div class="carousel">
-								  <!-- AWS Experience (first) -->
-								  <article class="carousel-item">
-									<a href="#" class="image">
+							  <div class="experience-list">
+								  <!-- LinkedIn -->
+								  <article class="experience-entry">
+									<div class="experience-header">
+									  <img class="logo-img" src="images/linkedin_logo.svg" alt="LinkedIn Logo" />
+									  <div>
+										<h3 class="major">Software Engineering Intern</h3>
+										<p class="experience-meta">Mountain View, CA &middot; May 2026 – August 2026</p>
+									  </div>
+									</div>
+									<ul>
+									  <li>Built distributed Scala/Apache Spark data pipelines powering multiple LinkedIn Premium Company Page systems across 23M+ Company Pages, processing large-scale datasets through Apache Airflow-orchestrated workflows for reliable downstream serving.</li>
+									  <li>Reduced pipeline runtime by 75%, from 8 hours to ~2 hours by parallelizing independent signal computations through a Scala thread pool, improving concurrency and throughput while engineering fault-tolerant workflows for reliable production execution.</li>
+									  <li>Architected the storage and low-latency serving architecture for precomputed signals, evaluating Pinot vs. Venice across consistency, availability, latency, and scalability tradeoffs, and built Java backend services using gRPC for low-latency retrieval and downstream propagation.</li>
+									</ul>
+									<div class="technology-list" aria-label="Technologies used">
+									  <span>Distributed Systems</span><span>Multithreading</span><span>Java</span><span>Scala</span><span>Apache Spark</span><span>Apache Airflow</span><span>Apache Pinot</span><span>Venice</span><span>gRPC</span>
+									</div>
+								  </article>
+
+								  <!-- AWS -->
+								  <article class="experience-entry">
+									<div class="experience-header">
 									  <img class="logo-img" src="images/aws_logo.png" alt="AWS Logo" />
-									</a>
-									<h3 class="major">Software Development Engineering Intern</h3>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Incoming Fall 2025</li>
-									  </ul>
+									  <div>
+										<h3 class="major">Software Engineering Intern</h3>
+										<p class="experience-meta">Redmond, WA &middot; September 2025 – December 2025</p>
+									  </div>
+									</div>
+									<ul>
+									  <li>Designed and implemented a Rust cache layer for Hermes, a distributed caching system accelerating Apache Spark queries over Amazon S3 and Apache Iceberg, reducing millions of repeated remote metadata and schema lookups.</li>
+									  <li>Designed and implemented a ghost-buffer data structure to predict cache hit-rate improvements, using a multi-layer design for the DRAM layer and a sharded design for the disk layer to maintain correctness and handle high concurrency in a distributed cache.</li>
+									  <li>Enabled cache-capacity experimentation without allocating additional cache memory, reducing memory overhead by 90% while predicting post-resize cache hit rates within 1–2% of observed results.</li>
+									</ul>
+									<div class="technology-list" aria-label="Technologies used">
+									  <span>Distributed Systems</span><span>Multithreading</span><span>Rust</span><span>Apache Spark</span><span>Amazon S3</span><span>Apache Iceberg</span><span>Distributed Caching</span>
 									</div>
 								  </article>
-						  
-								  <!-- Dropbox Experience (second) -->
-								  <article class="carousel-item">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/dropbox_logo.png" alt="Dropbox Logo" />
+
+								  <!-- Dropbox -->
+								  <article class="experience-entry">
+									<div class="experience-header">
+									  <img class="logo-img logo-img-lg" src="images/dropbox_logo.png" alt="Dropbox Logo" />
+									  <div>
+										<h3 class="major">Software Engineering Intern</h3>
+										<p class="experience-meta">San Francisco, CA &middot; May 2025 – August 2025</p>
+									  </div>
+									</div>
+									<ul>
+									  <li>Architected Python and Rust backend infrastructure using gRPC to propagate configuration state across Dropbox's desktop app and Nucleus sync engine, supporting 80M+ DAU with consistent state replication across platforms.</li>
+									  <li>Implemented observability with Grafana dashboards, and added integration tests and unit tests, providing monitoring of adoption, error rates, and latency to validate correctness and reliability at global scale, adhering with Dropbox's goal of achieving 99.999% availability.</li>
+									  <li>Improved fault tolerance in Dropbox's desktop configuration path by adding validation, fallback behavior, and failure-case integration coverage across the app, local configuration layer, and Nucleus sync engine.</li>
+									</ul>
+									<div class="technology-list" aria-label="Technologies used">
+									  <span>Distributed Systems</span><span>Rust</span><span>Python</span><span>gRPC</span><span>Grafana</span><span>Integration Testing</span>
+									</div>
+									<a class="experience-link" href="https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine" target="_blank" rel="noopener noreferrer" aria-label="Read Rewriting the heart of our sync engine on Dropbox Tech">
+									  <span class="experience-link-icon" aria-hidden="true">
+										<svg viewBox="0 0 24 24" role="img"><path d="M10.59 13.41a2 2 0 0 0 2.82 0l3-3a2 2 0 0 0-2.82-2.82l-1.17 1.17M13.41 10.59a2 2 0 0 0-2.82 0l-3 3a2 2 0 0 0 2.82 2.82l1.17-1.17" /></svg>
+									  </span>
+									  <span class="experience-link-copy">
+										<strong>Rewriting the heart of our sync engine</strong>
+										<small>dropbox.tech</small>
+									  </span>
 									</a>
-									<h3 class="major">Software Engineering Intern</h3>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Incoming Summer 2025</li>
-									  </ul>
+								  </article>
+
+								  <!-- SHIELD Lab at USF -->
+								  <article class="experience-entry">
+									<div class="experience-header">
+									  <img class="logo-img logo-img-lg" src="images/logo.png" alt="SHIELD Lab at USF Logo" />
+									  <div>
+										<h3 class="major">Undergraduate Research Assistant</h3>
+										<p class="experience-meta">Tampa, FL &middot; September 2024 – May 2025</p>
+									  </div>
+									</div>
+									<ul>
+									  <li>Developed an app for the Mac Parkman Foundation, aiming to reach over 5,000 individuals and raise awareness about concussion prevention through engaging educational outreach, featuring live 3D animations, interactive graphs, and real-time metrics.</li>
+									  <li>Built a scalable backend with Django, leveraging WebSockets to support up to 1,000 data points per second received from external sensors, ensuring seamless data flow and minimizing any delay to the frontend.</li>
+									  <li>Planned software development life cycles using Sprint methodologies, ensuring timely delivery of features through CI/CD pipelines.</li>
+									</ul>
+									<div class="technology-list" aria-label="Technologies used">
+									  <span>Python</span><span>Django</span><span>WebSockets</span><span>CI/CD</span><span>3D Visualization</span>
 									</div>
 								  </article>
-						  
-								  <!-- Existing Experiences -->
-								  <article class="carousel-item">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/logo.png" alt="Company Logo" />
-									</a>
-									<h3 class="major">Undergraduate Research Assistant</h3>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Developed an app for the Mac Parkman Foundation, aiming to reach over 5,000 individuals and raise awareness about concussion prevention through engaging educational outreach, featuring live 3D animations, interactive graphs, and real-time metrics.</li><br>
-										<li>Built a scalable backend with Django, leveraging WebSockets to support up to 1,000 data points per second received from external sensors, ensuring seamless data flow and minimizing any delay to the frontend.</li><br>
-										<li>Planned software development life cycles using Sprint methodologies, ensuring timely delivery of features through CI/CD pipelines.</li><br>
-									  </ul>
-									</div>
-								  </article>
-						  
-								  <article class="carousel-item">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/company3.png" alt="Company Logo" />
-									</a>
-									<h3 class="major">Co-Founder &amp; Lead Developer</h3>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Connected users with their local Muslim community by leading a team to co-develop a cross-platform mobile app, resulting in increased community engagement and participation.</li><br>
-										<li>Designed the frontend using React Native and NativeWind and created user interfaces for the explore page, profile pages, and other components using custom hooks and React's Context API, resulting in page load times decreasing from 200ms to 65ms.</li><br>
-										<li>Utilized Django's REST Framework to develop 25+ RESTful APIs for different types of users and optimized data storage using table partitioning and indexing in a PostgreSQL database, achieving a 53% reduction in query response time.</li><br>
-										<li>Secured interest and commitment for testing from 30+ mosques in the Tampa Bay area by successfully pitching the app.</li><br>
-									  </ul>
-									</div>
-								  </article>
-						  
-								  <article class="carousel-item active">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/company1.png" alt="Company Logo" />
-									</a>
-									<h3 class="major">Software Engineering Volunteer</h3>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Engineered a dynamic Full-Stack website for a local shawarma restaurant utilizing the MERN stack, significantly boosting digital customer engagement.</li><br>
-										<li>Crafted the web application using React.js for the front end, incorporating authentication through Context API, and managed data storage and retrieval with MongoDB via a RESTful API built with Node.js and Express.js, with functionality thoroughly tested using Postman.</li><br>
-										<li>Deployed JSON Web Tokens (JWT) for secure authentication, safeguarding user data and transactions.</li><br>
-										<li>Collaborated closely with the restaurant owner to identify requirements, leading to a customized solution that improved total orders by 30%.</li>
-									  </ul>
-									</div>
-								  </article>
-								</div>
-							  </section>
+							  </div>
 							  <br><br><br>
 							</div>
 						  </section>
 						  
 						
 						
-									
-						  <section class="wrapper alt style1">
-							<div class="inner">
-							  <h2 id="Projects" class="major">Projects</h2>
-							  <section class="features">
-								<div class="carousel">
-								  <article class="carousel-item active">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/project1.png" alt="Project 1 Logo" />
-									</a>
-									<h3 class="major">Pork-Free Dining Finder</h3>
-									<a href="https://github.com/tameemtantawy/Pork-Free-Dining-Finder" class="github-link">GitHub</a>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Created a web scraper utilizing Selenium and BeautifulSoup to collect and categorize food data from the three USF dining halls.</li><br>
-										<li>Developed a backend with FastAPI to process and serve the scraped data, and integrated PostgreSQL for robust data storage.</li><br>
-										<li>Designed a React.js frontend to display categorized food data, highlighting whether foods contain pork to provide users with precise information.</li><br>
-										<li>Established a scheduling mechanism to run the scraper at designated times and update the database, ensuring the information remains current.</li><br>
-										<li>Packaged and deployed the backend serverlessly using Docker and AWS Lambda for efficient and scalable deployment.</li>
-									  </ul>
-									</div>
-								  </article>
-								  <article class="carousel-item">
-									<a href="#" class="image">
-									  <img class="logo-img" src="images/project2.png" alt="Project 2 Logo" />
-									</a>
-									<h3 class="major">Cliff Diver AI</h3>
-									<a href="https://github.com/tameemtantawy/Diving-game-NEAT-AI" class="github-link">GitHub</a>
-									<div class="scrollable-list">
-									  <ul>
-										<li>Created an interactive diving game from the ground up using Pygame, leveraging the NeuroEvolution of Augmenting Topologies (NEAT) algorithm to dynamically train an agent to excel at the game mechanics.</li><br>
-										<li>Implemented sophisticated game physics to simulate realistic diving dynamics, enhancing both the AI's learning process and the game's authenticity.</li><br>
-										<li>Assessed the AI's performance, determining that it achieved maximum fitness after an average of 80 generations.</li>
-									  </ul>
-									</div>
-								  </article>
-								</div>
-							  </section>
-							</div>
-						  </section>
-						  
-								</div>
-							</section>
-
 					</section>
 
 				<!-- Footer -->
@@ -286,8 +256,6 @@
 							</ul>
 						</div>
 					</section>
-
-			</div>
 
 			<script>
 				document.getElementById('post').addEventListener('submit', function(event) {
